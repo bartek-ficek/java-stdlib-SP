@@ -14,7 +14,7 @@ public class Names {
             if (name.equals("-")) {
                 System.out.println(Arrays.toString(names.toArray()));
                 Set<String> uniqueNames = new HashSet<>(names);
-                System.out.println("You have " + uniqueNames.size() + " on your list.");
+                System.out.println("You have " + uniqueNames.size() + " unique names on your list.");
                 break;
             }
             names.add(name);
