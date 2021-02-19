@@ -27,7 +27,7 @@ public class Couples {
     public void checkCoupleSecondName(String name) {
         if (couples.containsKey(name)) {
             String secondNameFromCouple = couples.get(name);
-            System.out.println(secondNameFromCouple);
+            System.out.println("\nSecond name from couple is: " + secondNameFromCouple);
         } else {
             System.out.println("Such name does not exist on the list");
         }
