@@ -19,7 +19,17 @@ public class Couples {
             System.out.println("Please type second person name from couple and hit Enter to confirm.");
             String valueName = scanner.next();
 
+            couples.put(keyName, valueName);
 
         } while (true);
+    }
+
+    public void checkCoupleSecondName(String name) {
+        if (couples.containsKey(name)) {
+            String secondNameFromCouple = couples.get(name);
+            System.out.println(secondNameFromCouple);
+        } else {
+            System.out.println("Such name does not exist on the list");
+        }
     }
 }
